@@ -1,7 +1,6 @@
-let input = document.querySelector('.input');
-let button = document.querySelector('.button');
+let input = document.querySelector('.firstBox');
+let button = document.querySelector('.secondBox');
 //
-input.addEventListener('input', function(event) {
-  button.innerText =
-event.target.value.split('').join('');
+input.addEventListener('keyup', function(event) {
+  button.value = event.target.value;
 });
